@@ -25,6 +25,7 @@
   font-weight: bold;
 
 }
+
 .navbar ul{
   list-style-type: none;
 }
@@ -39,7 +40,7 @@ ul li:hover{
 
 
 }
-.navbar ul li::after{
+.navbar  ul li::after{
   color: white;
   position: absolute;
   width: 0;
@@ -62,13 +63,18 @@ a{
     max-height: 100%;
   cursor: pointer;
 }
-.sep{
-  height: 5px;
-  width: 100%;
+.welcome{
+  height:200px;
   background-color: #FAEBD7;
-  border-radius: 10px;
-}
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 
+}
+p1 p2{
+  padding-left: 30px
+  padding-top: 20px;
+}
 
 .contact-info {
   background-color: lime; /* Replace with your desired background color */
