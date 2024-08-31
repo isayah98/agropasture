@@ -1,11 +1,12 @@
 *{
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./Images/p1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2)), url(./Images/pexels-timmossholder-974314.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -63,24 +64,36 @@ a{
     max-height: 100%;
   cursor: pointer;
 }
-.welcome{
-  height:200px;
-  background-color: Chocolate;
+.moreInfo{
+  height:inherit;
+  background-color: CadetBlue;
   border-radius: 20px;
   margin-left: 50px;
   margin-right: 50px;
   padding-left: 70px;
+  padding-top: 20px;
+  padding-bottom: 25px;
   align-content: center;
 }
-p1{
+h1{
   font-size: 50px;
   font-style: oblique;
   font-weight: bold;
-  color: CadetBlue;
+  color: Darkgray;
 }
-p2{
-  font-weight: 300;
+.moreInfo p{
   color: white;
+  font-size: 15px;
+}
+.moreInfo a{
+  text-decoration: underline;
+}
+.moreInfo a:hover{
+  color: blue;
+  font-size: 20px;
+}
+p a{
+  font-style: normal;
 }
 .social-media{
   display: flex;
@@ -130,10 +143,43 @@ p2{
   height: 15px;
   width: 15px;
 }
-foorter{
-  margin-top: 20px;
-    border-top: 1px solid #666;
-    padding-top: 10px;
-    background-color: gray;
-    
+footer{
+  background-color: Darkgray;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-content: center;
+  text-align: center;
+}
+.scroll-container {
+  overflow-x: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.scroll-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.scroll-item img{
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px
+}
+h2{
+  font-size: 15px;
+  color: black;
+}
+
+.scroll-container:hover .scroll-content {
+  transform: translateX(-150px); /* Adjust the value to control the movement distance */
 }
