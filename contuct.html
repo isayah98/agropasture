@@ -1,58 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Pasture</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="agrob.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="./Images/logo_1.png">
-
 </head>
 <body>
     <div class="container">
-      <div class="contact-info">
-        <p><img src="./Images/location-position.svg" class="loc"><a href='https://www.google.com/maps/place/Clau-Clau/@-25.3553147,31.1309875,13z/data=!3m1!4b1!4m6!3m5!1s0x1ee83e93597af565:0xf916813945ebd311!8m2!3d-25.3589928!4d31.1733256!16s%2Fg%2F1td3bttx?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D'>121 clau- clau trust, Mbombela</a></p>
-        <p><img src="./Images/phone-6012.svg" class="num"> 065 998 2132</p>
-        <p><img src="./Images/mail-142.svg" class="mail"> <a href="mailto:agropasture150@gmail.com">agropasture150@gmail.com</a></p>
-        <p>Mon-Friday: 8.00 am to 16.00 pm</p>
-        <div class="social-media">
-           <a href="https://www.facebook.com/" target="_blank">
-             <img src="./Images/fb.png" alt="facebook">
-           </a>
-           <a href="https://www.instagram.com/" target="_blank">
-              <img src="./Images/ig.png" alt="instagram">
-           </a>
-           <a href="https://www.twitter.com/" target="_blank">
-             <img src="./Images/tw.png" alt="twitter">
-           </a>  
-         </div>
-      </div>
-      <br>
         <div class="navbar">
             <div class="menu-icon">
-               <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </div>
             <div class="logo">
                 <img onclick='href="index.html"' src="./Images/logo_1.png" alt="Agropasture logo">
             </div>
             <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contuct.html">Contact Us</a></li>
-              <li><a href="about.html">About Us</a></li>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
-
         </div>
         <br>
         <div class="moreInfo">
-          
+          <h1>GET IN TOUCH</h1>
+<div class="contact-section">
+  <div class="contact-info-block">
+    <i class="fas fa-map-marker-alt"></i>
+    <p><strong>ADDRESS</strong><br>121 clau-clau trust, Mbombela</p>
+  </div>
+  <div class="contact-info-block">
+    <i class="fas fa-phone-alt"></i>
+    <p><strong>PHONE</strong><br>065 998 2132</p>
+  </div>
+  <div class="contact-info-block">
+    <i class="fas fa-envelope"></i>
+    <p><strong>EMAIL</strong><br><a href="mailto:isayatsela@gmail.com">isayatsela@gmail.com</a></p>
+  </div>
+</div>
+
+<div class="contact-form">
+  <h2>Message Us</h2>
+<form action="send_mail.php" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
         </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+        </div>
+
+        <input type="submit" value="Send Message" class="submit-btn">
+    </form>
+  </div>
+  </div>
         <br>
+        <div>
         <footer>
-          <p>&copy; 2024 Agro Pasture. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p>&copy; 2024 Agro Pasture. All rights reserved. | Privacy Policy | Terms of Service</p>
         </footer>
     </div>
 </body>

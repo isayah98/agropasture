@@ -1,4 +1,4 @@
-  // Add JavaScript to handle hovering over each item and adjust the scroll-content position accordingly
+ // Add JavaScript to handle hovering over each item and adjust the scroll-content position accordingly
   const scrollItems = document.querySelectorAll('.scroll-item');
 
   scrollItems.forEach(item => {
@@ -33,3 +33,5 @@
         }
     });
 });
+
+document.getElementById('anafa').innerHTML('HI')
